@@ -24,8 +24,7 @@ class MainController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = UIColor(patternImage: UIImage(named:"homePageBack")!)
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(patternImage: UIImage(named:"homePageBack")!)
         
         signInTitle.text = "Poductivity"
         signInTitle.textColor = dBlue
@@ -60,7 +59,7 @@ class MainController: UIViewController {
         signIn.layer.borderColor = lBlue.cgColor
         signIn.layer.cornerRadius = 55/2
         signIn.translatesAutoresizingMaskIntoConstraints = false
-//        signIn.addTarget(self, action: #selector(pushViewController), for: .touchUpInside)
+        signIn.addTarget(self, action: #selector(pushViewController), for: .touchUpInside)
         view.addSubview(signIn)
         
         setupConstraints()

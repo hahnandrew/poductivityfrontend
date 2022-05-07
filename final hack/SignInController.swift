@@ -42,17 +42,7 @@ class SignInController: UIViewController {
         return field
     }()
     
-    let pwReField: UITextField = {
-        let field = UITextField()
-        field.placeholder = "Re-enter Password"
-        field.font = .systemFont(ofSize: 25)
-        field.textColor = .black
-        field.textAlignment = .left
-        field.translatesAutoresizingMaskIntoConstraints = false
-        return field
-    }()
-    
-    let signUpButton: UIButton = {
+    let signIn: UIButton = {
         let field = UIButton()
         field.setTitle("Sign Up", for: .normal)
         field.setTitleColor(.white, for: .normal)
@@ -68,12 +58,11 @@ class SignInController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = UIColor(patternImage: UIImage(named:"homePageBack")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named:"homePageBack")!)
         view.backgroundColor = .white
-        view.addSubview(pwReField)
         view.addSubview(pfp)
         view.addSubview(userField)
-        view.addSubview(signUpButton)
+        view.addSubview(signIn)
         view.addSubview(pwField)
         setupConstraints()
     }
@@ -96,15 +85,11 @@ class SignInController: UIViewController {
             pwField.topAnchor.constraint(equalTo: userField.bottomAnchor, constant: 5),
             pwField.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
+    
         
         NSLayoutConstraint.activate([
-            pwReField.topAnchor.constraint(equalTo: pwField.bottomAnchor, constant: 5),
-            pwReField.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-            ])
-        
-        NSLayoutConstraint.activate([
-            signUpButton.topAnchor.constraint(equalTo: pwReField.bottomAnchor, constant: 5),
-            signUpButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            signIn.topAnchor.constraint(equalTo: pwField.bottomAnchor, constant: 5),
+            signIn.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
     }
     

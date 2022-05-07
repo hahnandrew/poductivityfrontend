@@ -39,23 +39,15 @@ class TasksController: UIViewController {
         setupConstraints()
     }
     
-//    override init(style:UITableViewCell.CellStyle, reuseIdentifier: String?) {
-//        super.init
-//    }
+
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     func setupConstraints(){
-        //constraints for signUpField
-        NSLayoutConstraint.activate([])
-    }
-    
-//    @objc func pushViewController(){
-//        navigationController?.pushViewController(??(), animated: true)
-//    }
-    
+
+        NSLayoutConstraint.activate([])}
 }
 
 let parameters = ["totaltask": "bar"]
@@ -67,9 +59,8 @@ extension TasksController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TaskCell.id, for: indexPath) as! TaskCell
         let cell = tableView.dequeueReusableCell(withIdentifier: TaskCell.id, for: indexPath)
-//        cell.layer.cornerRadius = 15
+        cell.layer.cornerRadius = 15
         return cell
     }
 }
@@ -77,12 +68,9 @@ extension TasksController: UITableViewDataSource{
 extension TasksController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {return 10}
         
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) -> {}
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) ->
+//    {}
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)
     {}
 }
-
-//NetworkManager.getPodTotalTasks { posts in
-//    self.???
-//}

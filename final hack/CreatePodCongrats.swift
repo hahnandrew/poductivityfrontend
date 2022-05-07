@@ -11,13 +11,13 @@ import SwiftUI
 
 class CreatePodCongrats: UIViewController {
     
-//    let dBlue = UIColor(red: 2/255, green: 114/255, blue: 198/255, alpha: 100)
-//    let lBlue = UIColor(red: 159/255, green: 212/255, blue: 252/255, alpha: 100)
+    let dBlue = UIColor(red: 2/255, green: 114/255, blue: 198/255, alpha: 100)
+    let lBlue = UIColor(red: 159/255, green: 212/255, blue: 252/255, alpha: 100)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = UIColor(patternImage: UIImage(named:"homePageBack")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named:"homePageBack")!)
         view.backgroundColor = .white
         setupConstraints()
     }

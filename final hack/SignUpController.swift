@@ -11,21 +11,6 @@ import Alamofire
 
 class SignUpController: UIViewController {
     
-//    static let host =
-//    static func getAllPosts(completion: @escaping ([Post]) -> Void) {
-//        let endpoint = "\(host)/posts/all/"
-//        AF.request(endpoint, method: .get).validate().responseData {response in switch response.result {
-//        case .success(let data):
-//            let jsonDecoder = JSONDecoder()
-//            if let userResponse = try? jsonDecoder.decode([Post].self, from: data) {
-//                completion(userResponse)
-//            } else {
-//                print("Failed to deode getAllPosts")
-//            }
-//        case .failure(let error):
-//            print(error.localizedDescription)
-//        }
-//    }
 
     let pfp: UIImageView = {
         let field = UIImageView()
@@ -83,7 +68,7 @@ class SignUpController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = UIColor(patternImage: UIImage(named:"homePageBack")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named:"homePageBack")!)
         view.backgroundColor = .white
         view.addSubview(pwReField)
         view.addSubview(pfp)

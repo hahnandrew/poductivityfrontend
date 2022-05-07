@@ -9,12 +9,11 @@ import UIKit
 
 class TaskCell: UITableViewCell {
 
-    static let id = "TaskCellId"
-
-    override func setSelected(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style, reuseIdentifier: reuseIdentifier)
-
-        // Configure the view for the selected state
-    }
+//    static let id = "TaskCellId"
+//
+//    override func setSelected(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+//        super.init(style, reuseIdentifier: reuseIdentifier)
+//
+//    }
 
 }
